@@ -101,9 +101,15 @@ if st.button('Predict Energy Savings'):
         combined_results[metric] = (min_val, max_val)
 
     for metric, (min_val, max_val) in combined_results.items():
-        st.metric(
-            label=metrics_mapping[metric],
-            value=f"Approximately {min_val:.1f}% – {max_val:.1f}%"
-        )
+        if abs(min_val - max_val) < 0.05:  # If very close (e.g., 8.4%–8.5%), treat as one value
+            st.metric(
+                label=metrics_mapping[metric],
+                value=f"Approximately {((min_val + max_val)/2):.1f}%"
+            )
+        else:
+            st.metric(
+                label=metrics_mapping[metric],
+                value=f"Approximately {min_val:.1f}% – {max_val:.1f}%"
+            )
 
     st.markdown("*Baseline corresponds to operation without VFD and without Soft Starter.*")
