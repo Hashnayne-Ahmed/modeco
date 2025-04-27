@@ -111,3 +111,9 @@ if st.button('Predict Energy Savings'):
         st.markdown("<br>", unsafe_allow_html=True)  # small spacing between blocks
 
     st.markdown("<div style='font-style: italic; font-size:20px; color: #555;'>Baseline corresponds to operation without VFD and without Soft Starter.</div>", unsafe_allow_html=True)
+
+    st.markdown("---")
+    st.markdown("### ⚠️ Disclaimer")
+    st.markdown("""
+    The energy savings predictions provided by MoDECO are based on machine learning models trained on representative datasets and theoretical formulations. Actual energy savings may vary depending on specific motor characteristics, operational conditions, and installation environments. Users are encouraged to conduct on-site measurements and professional assessments for precise evaluations.
+    """)
