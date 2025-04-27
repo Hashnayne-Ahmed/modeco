@@ -3,13 +3,30 @@ import numpy as np
 import torch
 import joblib
 
+class EnergyModel(torch.nn.Module):
+    def __init__(self):
+        super(EnergyModel, self).__init__()
+        self.net = torch.nn.Sequential(
+            torch.nn.Linear(3, 48),
+            torch.nn.Tanh(),
+            torch.nn.Dropout(0.05),
+            torch.nn.Linear(48, 48),
+            torch.nn.Tanh(),
+            torch.nn.Dropout(0.05),
+            torch.nn.Linear(48, 4)
+        )
+    def forward(self, x):
+        return self.net(x)
+
 def load_model_and_scaler(profile_number):
     if profile_number == 1:
         scaler = joblib.load('scaler1.pkl')
-        model = torch.load('trained_model1.pth')
+        model = EnergyModel()
+        model.load_state_dict(torch.load('trained_model1.pth', map_location=torch.device('cpu')))
     elif profile_number == 2:
         scaler = joblib.load('scaler2.pkl')
-        model = torch.load('trained_model2.pth')
+        model = EnergyModel()
+        model.load_state_dict(torch.load('trained_model2.pth', map_location=torch.device('cpu')))
     model.eval()
     return model, scaler
 
