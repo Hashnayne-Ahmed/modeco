@@ -84,11 +84,26 @@ if st.button('Predict Energy Savings'):
         }
 
     st.header("Predicted Energy Savings (%)")
-    for profile_name, values in results.items():
-        st.subheader(profile_name)
-        st.metric(label="Savings with VFD Only (compared to baseline)", value=f"{values['Savings (VFD Only)']:.2f}%")
-        st.metric(label="Savings with VFD and Soft Starter (compared to baseline)", value=f"{values['Savings (VFD + SS)']:.2f}%")
-        st.metric(label="Additional Savings by Adding Soft Starter to VFD", value=f"{values['Savings (SS Gain after VFD)']:.2f}%")
-        st.metric(label="Savings with Soft Starter Only (no VFD)", value=f"{values['Savings (SS Only)']:.2f}%")
+
+    metrics_mapping = {
+        'Savings (VFD Only)': "Savings with VFD Only (compared to baseline)",
+        'Savings (VFD + SS)': "Savings with VFD and Soft Starter (compared to baseline)",
+        'Savings (SS Gain after VFD)': "Additional Savings by Adding Soft Starter to VFD",
+        'Savings (SS Only)': "Savings with Soft Starter Only (no VFD)"
+    }
+
+    combined_results = {}
+
+    for metric in metrics_mapping.keys():
+        vals = [results[profile][metric] for profile in results]
+        min_val = min(vals)
+        max_val = max(vals)
+        combined_results[metric] = (min_val, max_val)
+
+    for metric, (min_val, max_val) in combined_results.items():
+        st.metric(
+            label=metrics_mapping[metric],
+            value=f"Approximately {min_val:.1f}% – {max_val:.1f}%"
+        )
 
     st.markdown("*Baseline corresponds to operation without VFD and without Soft Starter.*")
