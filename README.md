@@ -23,7 +23,7 @@ The app allows users to:
 
 ## 📦 Repository Contents
 
-- `app.py` — Source code for the interactive Streamlit web application.
+- `modeco.py` — Source code for the interactive Streamlit web application.
 - `scaler1.pkl`, `scaler2.pkl` — Pre-trained scalers for input normalization.
 - `trained_model1.pth`, `trained_model2.pth` — Pre-trained PINN models for energy forecasting.
 - `requirements.txt` — Python dependencies needed to run the app locally.
