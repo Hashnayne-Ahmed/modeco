@@ -36,7 +36,7 @@ To run MoDECO locally:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/YourUsername/modeco.git
+    git clone https://github.com/Hashnayne-Ahmed/modeco.git
     cd modeco
     ```
 
@@ -73,8 +73,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🎓 Acknowledgment
 
-This project was developed by [Hashnayne Ahmed](https://www.hashnayneahmed.com/) at the University of Florida (UF) as part of ongoing research efforts in energy optimization and motor-driven systems.  
-The author gratefully acknowledges the guidance and support provided by the following institutions:
+This project was developed by [Hashnayne Ahmed](https://www.hashnayneahmed.com/) at the University of Florida (UF) as part of ongoing research efforts in energy optimization and motor-driven systems. The author gratefully acknowledges the guidance and support provided by the following institutions:
 
 - University of Florida Industrial Training and Assessment Center (UF-ITAC)
 - Department of Mechanical and Aerospace Engineering, University of Florida
