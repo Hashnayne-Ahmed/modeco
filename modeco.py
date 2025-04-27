@@ -85,30 +85,29 @@ if st.button('Predict Energy Savings'):
 
     st.header("Predicted Energy Savings (%)")
 
-metrics_mapping = {
-    'Savings (VFD Only)': "Savings with VFD Only (compared to baseline)",
-    'Savings (VFD + SS)': "Savings with VFD and Soft Starter (compared to baseline)",
-    'Savings (SS Gain after VFD)': "Additional Savings by Adding Soft Starter to VFD",
-    'Savings (SS Only)': "Savings with Soft Starter Only (no VFD)"
-}
+    metrics_mapping = {
+        'Savings (VFD Only)': "Savings with VFD Only (compared to baseline)",
+        'Savings (VFD + SS)': "Savings with VFD and Soft Starter (compared to baseline)",
+        'Savings (SS Gain after VFD)': "Additional Savings by Adding Soft Starter to VFD",
+        'Savings (SS Only)': "Savings with Soft Starter Only (no VFD)"
+    }
 
-combined_results = {}
+    combined_results = {}
 
-for metric in metrics_mapping.keys():
-    vals = [results[profile][metric] for profile in results]
-    min_val = min(vals)
-    max_val = max(vals)
-    combined_results[metric] = (min_val, max_val)
+    for metric in metrics_mapping.keys():
+        vals = [results[profile][metric] for profile in results]
+        min_val = min(vals)
+        max_val = max(vals)
+        combined_results[metric] = (min_val, max_val)
 
-for metric, (min_val, max_val) in combined_results.items():
-    # Bigger font for label
-    label = f"<div style='font-size:26px; font-weight:600; color:#333; margin-top:20px;'>{metrics_mapping[metric]}</div>"
-    # Big font for value
-    if abs(min_val - max_val) < 0.05:
-        value = f"<div style='font-size:38px; font-weight:800; color:#000;'>Approximately {((min_val + max_val)/2):.1f}%</div>"
-    else:
-        value = f"<div style='font-size:38px; font-weight:800; color:#000;'>Approximately {min_val:.1f}% – {max_val:.1f}%</div>"
-    st.markdown(label, unsafe_allow_html=True)
-    st.markdown(value, unsafe_allow_html=True)
+    for metric, (min_val, max_val) in combined_results.items():
+        label = f"<div style='font-size:26px; font-weight:600; color:#333; margin-bottom:5px;'>{metrics_mapping[metric]}</div>"
+        if abs(min_val - max_val) < 0.05:
+            value = f"<div style='font-size:26px; font-weight:700; color:#000;'>Approximately {((min_val + max_val)/2):.1f}%</div>"
+        else:
+            value = f"<div style='font-size:26px; font-weight:700; color:#000;'>Approximately {min_val:.1f}% – {max_val:.1f}%</div>"
+        st.markdown(label, unsafe_allow_html=True)
+        st.markdown(value, unsafe_allow_html=True)
+        st.markdown("<br>", unsafe_allow_html=True)  # small spacing between blocks
 
-st.markdown("<div style='font-style: italic; font-size:18px; color: #555;'>Baseline corresponds to operation without VFD and without Soft Starter.</div>", unsafe_allow_html=True)
+    st.markdown("<div style='font-style: italic; font-size:20px; color: #555;'>Baseline corresponds to operation without VFD and without Soft Starter.</div>", unsafe_allow_html=True)
