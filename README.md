@@ -1,6 +1,6 @@
 # **MoDECO** — **Mo**tor **D**riven **E**nergy **C**onsumption and **O**ptimization
 
-MoDECO - **Mo**tor **D**riven **E**nergy **C**onsumption and **O**ptimization is an open-source tool developed to forecast and optimize energy consumption in motor-driven systems based on a combined theoretical and data-driven framework.
+**MoDECO** - **Mo**tor **D**riven **E**nergy **C**onsumption and **O**ptimization is an open-source tool developed to forecast and optimize energy consumption in motor-driven systems based on a combined theoretical and data-driven framework.
 
 The theoretical foundation of MoDECO relies on physics-based formulations that describe motor energy behavior under variable frequency drive (VFD) control, soft starter (SS) operation, and baseline constant-speed scenarios. Key electrical parameters—such as dip depth (ε), rated power factor (cos(φᵣ)), and torque deviation (δ)—are used to quantify normalized energy consumption under different operational modes.
 
