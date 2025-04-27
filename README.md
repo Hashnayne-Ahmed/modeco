@@ -77,5 +77,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## 🎓 Acknowledgment
 <p align="justify">
 This material is based upon work supported by the U.S. Department of Energy's Office of Energy Efficiency and Renewable Energy (EERE) under the Advanced Manufacturing Office Award No. DE-EE0009729 ([Funder ID: 10.13039/100000015](https://doi.org/10.13039/100000015)). Support from the [University of Florida Industrial Training and Assessment Center (UF-ITAC)](https://iac.mae.ufl.edu/) ([IAC Network Link](https://iac.university/center/UF)) and the [Department of Mechanical and Aerospace Engineering at the University of Florida](https://mae.ufl.edu/) is also gratefully acknowledged.
-</p>
+
 This project was developed by [Hashnayne Ahmed](https://www.hashnayneahmed.com/) as part of ongoing research efforts in energy optimization and motor-driven systems.
+</p>
