@@ -9,6 +9,7 @@ The theoretical foundation of MoDECO relies on physics-based formulations that d
 <p align="justify">
 To enable real-time and user-friendly predictions, MoDECO integrates these physics-derived relations into a lightweight forecasting model built using a physics-informed neural network (PINN). The trained model accurately maps observable electrical inputs to four normalized energy ratios, allowing facility managers, engineers, and energy analysts to estimate energy savings without requiring detailed speed profile measurements or extensive physical simulations.
 </p>
+
 ---
 
 ## 📑 Reference
