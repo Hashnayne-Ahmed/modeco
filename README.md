@@ -85,7 +85,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🎓 Acknowledgment
 <p align="justify">
-This research was funded by the U.S. Department of Energy’s Office of Manufacturing and Energy Supply Chains (OMESC) under Award No. DE-EE0009729. Support from the Department of Mechanical and Aerospace Engineering at the University of Florida (<a href="https://mae.ufl.edu/" target="_blank">https://mae.ufl.edu/</a>) and the University of Florida Industrial Assessment Center (UF-IAC) (<a href="https://iac.mae.ufl.edu/" target="_blank">https://iac.mae.ufl.edu/</a>, <a href="https://iac.university/center/UF" target="_blank">https://iac.university/center/UF</a>) is also gratefully acknowledged.
+This research was funded by the U.S. Department of Energy’s Office of Manufacturing and Energy Supply Chains (OMESC) under Award No. DE-EE0009729. Support from the [Department of Mechanical and Aerospace Engineering](https://mae.ufl.edu/) at the University of Florida and the University of Florida [Industrial Training and Assessment Center (UF-ITAC)](https://iac.mae.ufl.edu/) ([UF-IAC Info Page](https://iac.university/center/UF)) is also gratefully acknowledged.
 </p>
 
 This project was developed by [Hashnayne Ahmed](https://www.hashnayneahmed.com/) as part of ongoing research efforts in energy optimization and motor-driven systems.
