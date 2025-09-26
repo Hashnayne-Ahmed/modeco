@@ -14,9 +14,7 @@ To enable real-time and user-friendly predictions, MoDECO integrates these physi
 ## 📑 Reference
 
 This tool is based on the research published in: 
-Ahmed, H.; Cárdenas-Lailhacar, C.; Sherif, S.A.  
-*Energy Optimization of Motor-Driven Systems Using Variable Frequency Control, Soft Starters, and Machine Learning Forecasting.*  
-**Energies** 2025, 18, 5135.  
+Ahmed, H.; Cárdenas-Lailhacar, C.; Sherif, S.A. *Energy Optimization of Motor-Driven Systems Using Variable Frequency Control, Soft Starters, and Machine Learning Forecasting.*  **Energies** 2025, 18, 5135.  
 🔗 [https://doi.org/10.3390/en18195135](https://doi.org/10.3390/en18195135)
 
 ---
