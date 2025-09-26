@@ -11,6 +11,16 @@ To enable real-time and user-friendly predictions, MoDECO integrates these physi
 </p>
 ---
 
+## 📑 Reference
+
+This tool is based on the research published in: 
+Ahmed, H.; Cárdenas-Lailhacar, C.; Sherif, S.A.  
+*Energy Optimization of Motor-Driven Systems Using Variable Frequency Control, Soft Starters, and Machine Learning Forecasting.*  
+**Energies** 2025, 18, 5135.  
+🔗 [https://doi.org/10.3390/en18195135](https://doi.org/10.3390/en18195135)
+
+---
+
 ## 🚀 Interactive Web Application
 
 Access the live interactive MoDECO app here:
@@ -76,7 +86,8 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🎓 Acknowledgment
 <p align="justify">
-Support from the University of Florida Industrial Training and Assessment Center (UF-ITAC)(https://iac.mae.ufl.edu/, https://iac.university/center/UF) and the Department of Mechanical and Aerospace Engineering at the University of Florida (https://mae.ufl.edu/) is also gratefully acknowledged.
+This research was funded by the U.S. Department of Energy’s Office of Manufacturing and Energy Supply Chains (OMESC) under Award No. DE-EE0009729. Support from the Department of Mechanical and Aerospace Engineering at the University of Florida (<a href="https://mae.ufl.edu/" target="_blank">https://mae.ufl.edu/</a>) and the University of Florida Industrial Assessment Center (UF-IAC) (<a href="https://iac.mae.ufl.edu/" target="_blank">https://iac.mae.ufl.edu/</a>, <a href="https://iac.university/center/UF" target="_blank">https://iac.university/center/UF</a>) is also gratefully acknowledged.
+</p>
 
 This project was developed by [Hashnayne Ahmed](https://www.hashnayneahmed.com/) as part of ongoing research efforts in energy optimization and motor-driven systems.
 </p>
